@@ -27,8 +27,10 @@ class Main {
     //other initializations
     ArrayList<String> past_guesses = new ArrayList<String>() ;
     int guess_count = 0 ;
+    boolean random_length_mode = false ;
 
     //and, now to the game
+    //yeah, I know I could have written this better but :shrug:
     while(!is_play_over) {
         
       is_game_over = false ;
@@ -37,6 +39,7 @@ class Main {
       System.out.print("Would you like to:\n" + 
                         "  a - add to your lexicon (dictionary)?\n" + 
                         "  p - play the game?\n" +
+                        "  e - enable random-length mode?\n" +
                         "  q - quit?\n" + 
                         "enter the number \n>>") ;
       String play = s.nextLine() ;
@@ -44,6 +47,14 @@ class Main {
       if (play.equals("q")) { // QUITTING
         is_play_over = false ;
       } 
+      else if (play.equals("e")) {
+        if (random_length_mode == false) {
+          random_length_mode = true ;
+        } else { // random_length_mode == true
+          //take in a required length of words (not just 5)?
+          // remove all words from ans (dict) that are != 5 letters in length
+        }
+      }
       else if (play.equals("a")) { // ADD TO DICTIONARY
         //taking the words for the dictionary
         System.out.println("enter a word \n>>") ;
