@@ -30,7 +30,6 @@ class Main {
     boolean random_length_mode = false ;
 
     //and, now to the game
-    //yeah, I know I could have written this better but :shrug:
     while(!is_play_over) {
         
       is_game_over = false ;
@@ -54,7 +53,7 @@ class Main {
         if (random_length_mode == false) {
           random_length_mode = true ;
         } else { // random_length_mode == true
-          // remove all words from ans (dict) that are != 5 letters in length
+          // remove all words from ans (dictionary) that are != 5 letters in length
           for (int i = ans.size() - 1; i > 0; i--) {
             if (ans.get(i).length() > 5) {
               ans.remove(i) ;
