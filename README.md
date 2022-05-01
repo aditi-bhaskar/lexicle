@@ -1,6 +1,6 @@
 # lexicle
 wordle, but the words stay within your lexicon...
-also, if you've never noticed (and you're as bored-le as I am) the 2015 AP CS A frq  is a wordle: https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap15_frq_computer_science_a.pdf... :shrug:
+also, if you've never noticed (and you're as bored-le as I am) the 2015 AP CS A frq #2 is a wordle: https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap15_frq_computer_science_a.pdf... :shrug:
 
 ----------------------------
 to play on your command line: 
