@@ -47,7 +47,8 @@ class Main {
       System.out.print(".................................... \n") ; 
 
       if (play.equals("q")) { // QUITTING
-        is_play_over = false ;
+        is_play_over = true ;
+        System.out.println("You have sucessfully quit :)") ;
       } 
       else if (play.equals("e")) { // RANDOM LENGTH MODE
         if (random_length_mode == false) {
