@@ -128,11 +128,11 @@ class Main {
               printing += guess_letter + "    " ;
             }
             else if (ans_word.indexOf(guess_letter) != -1) {
-              printing += "+" + guess_letter + "+  " ;
+              printing += "*" + guess_letter + "*  " ;
               incorrect = true ;
             }
             else {
-              printing += "*" + guess_letter + "*  " ;
+              printing += "+" + guess_letter + "+  " ;
               incorrect = true ;
             }
           }
