@@ -125,14 +125,14 @@ class Main {
             String guess_letter = guesses.substring(i, i+1).toUpperCase() ;
             
             if(ans_letter.equals(guess_letter)) { // in word, right spot
-              printing += guess_letter + "    " ;
+              printing += " " + guess_letter + "   " ;
             }
-            else if (ans_word.indexOf(guess_letter) != -1) { // not in word
-              printing += "*" + guess_letter + "*  " ;
+            else if (ans_word.indexOf(guess_letter) != -1) { // in word, wrong spot
+              printing += "+" + guess_letter + "+  " ;
               incorrect = true ;
             }
-            else { // in word, wrong spot
-              printing += "+" + guess_letter + "+  " ;
+            else { // not in word
+              printing += "*" + guess_letter + "*  " ;
               incorrect = true ;
             }
           }
