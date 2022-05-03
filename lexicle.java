@@ -8,17 +8,7 @@ class Main {
     boolean is_play_over = false ;
     boolean is_game_over = false ;
 
-    System.out.println("\nPLAYING LEXICLE \n\n") ; 
-
-    System.out.println(".................................... \n" +
-                        "How to play:\n" +
-                        "enter a starting word," +
-                        "then repeatedly enter more words\n" +
-                        "until you guess the correct word entirely\n" +
-                        " >> *letter* means letter is not in the word\n" +
-                        " >> +letter+ means letter is in word, incorrect spot\n" +
-                        " >>  letter  (by itself) means letter is in word, correct spot\n" +
-                        "good luck!\n ***** \n") ;
+    System.out.println("\n\nPLAYING LEXICLE \n") ; 
     
     //initializing options to play with
     ArrayList<String> ans = new ArrayList<String>();
@@ -37,10 +27,10 @@ class Main {
       // player action...
       System.out.print(".................................... \n" + 
                         "Would you like to:\n" + 
-                        "  a - add to your lexicon (dictionary)?\n" +
-                        "  e - enable/disable random-length mode?\n" +
-                        "  s - see your dictionary?\n" +  
                         "  p - play the game?\n" +
+                        "  a - add to your lexicon (dictionary)?\n" +
+                        "  s - see your dictionary?\n" + 
+                        "  e - enable/disable random-length mode?\n" + 
                         "  q - quit?\n" + 
                         "enter the mode's corresponding letter \n>>") ;
       String play = s.nextLine() ;
@@ -99,6 +89,17 @@ class Main {
         System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n" + 
         "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"+
         "Starting game now.") ;
+
+        System.out.println(".................................... \n" +
+        "How to play:\n" +
+        "enter a starting word," +
+        "then repeatedly enter more words\n" +
+        "until you guess the correct word entirely\n" +
+        " >> *letter* means letter is not in the word\n" +
+        " >> +letter+ means letter is in word, incorrect spot\n" +
+        " >>  letter  (by itself) means letter is in word, correct spot\n" +
+        "good luck!\n.................................... \n") ;
+
         guess_count = 0 ;
         
         //setting the answer word to one from the dictionary
